@@ -1,4 +1,5 @@
 
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function Header(){
     return(
@@ -12,10 +13,13 @@ function Header(){
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <Link to="/home">Home</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <Link to="/about">About</Link>
+        </li>
+        <li class="nav-item">
+          <Link to="/contact">Contact</Link>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
